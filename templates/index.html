@@ -39,29 +39,48 @@
         <div class="col-md-4">
           <!-- Mars Facts -->
           <div class="row" id="mars-facts">
-            <h4>Mars Facts</h4>
+            <h2>Mars Facts</h2>
             {{ mars.facts | safe }}
           </div>
         </div>
-      <!-- Section for Hemisphere Image thumbnails -->
-      <div class="row" id="mars-hemispheres">
-        <div class="col-md-12">
-          <div class="media">
-            <div class="media-body">
-              <h2>Mars Hemispheres</h2>
+    </div>
+          <!-- Section for Hemisphere Image thumbnails -->
+          <div class="row" id="mars-hemispheres">
+            <div class="col-md-12">
+              <div class="media">
+                <div class="media-body">
+                  <h2>Mars Hemispheres</h2>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      
-      
-      <div class="row" id="hemi-thumbs">
-        <div class="col-md-3">
-          <h4><b>{{mars.hemisphere_images[0].title}}</b></h4>  -->
-            <img src="{{mars.hemisphere_images[0].img_url}}" class="img-thumbnail" alt="thumbnail"/>
-        </div> -->
-      </div> }%>
-       
-    </div>
+          
+          
+          <div class="row" id="hemi-thumbs">
+            <div class="col-md-3">
+              <h4><b>{{mars.hemisphere_images[0].title}}</b></h4>
+              <a href="{{mars.hemisphere_images[0].img_url}}" class="thumb-link">
+                <img src="{{mars.hemisphere_images[0].img_url}}" class="img-thumbnail" class="img-responsive" alt="thumbnail"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h4><b>{{mars.hemisphere_images[1].title}}</b></h4>
+              <a href="{{mars.hemisphere_images[1].img_url}}" class="thumb-link">
+                <img src="{{mars.hemisphere_images[1].img_url}}" class="img-thumbnail" class="img-responsive" alt="thumbnail"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h4><b>{{mars.hemisphere_images[2].title}}</b></h4>
+              <a href="{{mars.hemisphere_images[2].img_url}}" class="thumb-link">
+                <img src="{{mars.hemisphere_images[2].img_url}}" class="img-thumbnail" class="img-responsive" alt="thumbnail"/>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <h4><b>{{mars.hemisphere_images[3].title}}</b></h4>
+              <a href="{{mars.hemisphere_images[3].img_url}}" class="thumb-link">
+                <img src="{{mars.hemisphere_images[3].img_url}}" class="img-thumbnail" class="img-responsive" alt="thumbnail">
+              </a>
+            </div>
+          </div>
   </body>
 </html>

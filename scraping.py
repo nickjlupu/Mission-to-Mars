@@ -17,7 +17,7 @@ def scrape_all():
         "news_paragraph": news_paragraph,
         "featured_image": featured_image(browser),
         "facts": mars_facts(),
-        "hemispehere_images": hemis(browser),
+        "hemisphere_images": hemisphere_images(browser),
         "last_modified": dt.datetime.now()
     }
 
@@ -25,7 +25,7 @@ def scrape_all():
     browser.quit()
     return data
 
-def hemis(browser):
+def hemisphere_images(browser):
     # declare the variable that will contain a list of dicts having the title and urls appended 
     hemi_data = []
 
@@ -62,28 +62,13 @@ def hemis(browser):
         # get title of enhanced image
         hemi_title = hemi_soup.find("h2", class_="title").text
         # get url of enhanced image
-        hemi_url = hemi_soup.find("a", text="Original").get("href")
+        hemi_url = hemi_soup.find("a", text="Sample").get("href")
         # append to dictionary
         hemi_dict = {'title':hemi_title, 'img_url': hemi_url}
         # append to list of dictionaries
         hemi_data.append(hemi_dict)
         # return list of dictionaries
-        return hemi_data
-
-    
-    # 1. click thumbnail
-    # 2. click filename link
-    # 3. grab filename & url to store in dict
-    # 4. append dict to a list, list contains a dict for each hemisphere
-
-    # Find the more info button and click that
-    browser.is_element_present_by_text('more info', wait_time=1)
-    more_info_elem = browser.links.find_by_partial_text('more info')
-    more_info_elem.click()
-
-    # Parse the resulting html with soup
-    html = browser.html
-    img_soup = soup(html, 'html.parser')
+    return hemi_data
 
 
 # Scrape Mars News
