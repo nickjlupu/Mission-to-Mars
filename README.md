@@ -1,9 +1,6 @@
 # Mission-to-Mars
 
-# Data Analytics Week 10 Challenge
-
 ## Objectives
-The goals of this challenge are to:
 
 * Use BeautifulSoup and Splinter to automate a web browser and scrape high-resolution images.
 * Use a MongoDB database to store data from the web scrape.
@@ -13,21 +10,28 @@ The goals of this challenge are to:
 
 ## Resources
 
-Python 3.7.7<br>
-Jupyter Notebook<br>
-Modules/Libraries:  splinter, BeautifulSoup, pandas, datetime<br>
-VS Code (.py, .html, .css files)<br>
-MongoDB<br>
-Flask<br>
-Bootstrap 3<br>
+* Python 3.7.7<br>
+* Jupyter Notebook<br>
+* Modules/Libraries:  splinter, BeautifulSoup, pandas, datetime<br>
+* VS Code (.py, .html, .css files)<br>
+* MongoDB<br>
+* Flask<br>
+* Bootstrap 3<br>
 
-## Analysis
+
+## Installation
+* Open MongoDB (mongod command in Bash), create/use a database named "mars_app"
+* run app.py to bring up local host address
+* click Scrape New Data button to start app
+
+## Description
 
 The web scrape is performed in the functions written in the python script:  [scraping.py](scraping.py).
-Output is pushed to a browser with Flask, with the app routes being set up in the python script [app.py](app.py).
-The app routes in the app.py script calls the scraping.py script which contains the code that is doing the heavy lifting.
-Data is stored in a MongoDB, where it is retrieved to display on the browser through a locally hosted Flask instance.
-The page is set up and formatted with the html file:  [index.html](templates/index.html).  This file uses Bootstrap 3 components to clean up the display and add responsive image types to allow for optimized viewing across various devices.  For the challenge, I have added the 4 hemisphere images as clickable thumbnails.  I have also set up the scraping route with an html index to add a home button to return to the main page once the scraping is complete. 
+Output is pushed to a browser with Flask, with the app routes being set up in the python script [app.py](app.py).<br>
+The app routes in the app.py script calls the scraping.py script which contains the code that is doing the heavy lifting.<br>
+Data is stored in a MongoDB, where it is retrieved to display on the browser through a locally hosted Flask instance.<br>
+The page is set up and formatted with the html file:  [index.html](templates/index.html).  This file uses Bootstrap 3 components to clean up the display and add responsive image types to allow for optimized viewing across various devices.  For the challenge, I have added the 4 hemisphere images as clickable thumbnails.  I have also set up the scraping route with an html index to add a home button to return to the main page once the scraping is complete. <br>
+
 
 ### Obstacles and Challenges
 
