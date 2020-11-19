@@ -34,10 +34,3 @@ The page is set up and formatted with the html file:  [index.html](templates/ind
 1. Throughout the weekly modules I encountered some errors that I was able to debug myself.  The chromedriver was not present in the directory where the python interpreter was looking.  Attention to detail and review of the error codes were crucial to overcoming this obstacle.  
 2. Looping through the list of dictionaries held in the MongoDB was a challenge.  I understand that my code could be refactored to include these loops.  Considering there are only 4 items I have manually accessed each dictionary by the index list and key.  
 3. Creating the clickable thumbnails was a bit of a challenge.  Finally, it occured to me that the data source url would have an exmaple that I could use for guidance on the syntax.  My app still lacks home buttons on the landing pages of the image thumbnails.  Next steps could be creating index html pages for each of the 4 images.
-
-
-## Portfolio
-
-As part of this challenge we were asked to complete a portfolio webpage saved as an html file.  Below is a screenshot of mine.  Details can be found at the repository that I have set up as a working copy of my portfolio:  [https://github.com/nickjlupu/portfolio](https://github.com/nickjlupu/portfolio)
-
-![portfolio](images/PortfolioScreenshot.PNG)
